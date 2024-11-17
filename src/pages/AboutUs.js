@@ -18,7 +18,7 @@ import CustomerLoveIconImage from "images/simple-icon.svg";
 import RiceMillImage from "images/AI Generated/Rice Mill.jpeg";
 import MachineryImage from "images/AI Generated/Rice Processing Machinery.jpeg";
 
-const Subheading = tw.span`uppercase tracking-wider text-sm`;
+const Subheading = tw.span`uppercase tracking-wider text-sm text-white`;
 export default () => {
 
   useEffect(() => {

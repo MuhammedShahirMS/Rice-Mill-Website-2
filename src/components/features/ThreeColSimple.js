@@ -11,11 +11,11 @@ import ShieldIconImage from "images/shield-icon.svg";
 import CustomizeIconImage from "images/customize-icon.svg";
 import { ReactComponent as SvgDecoratorBlob3 } from "images/svg-decorator-blob-3.svg";
 
-const Heading = tw(SectionHeading)``;
+const Heading = tw(SectionHeading)`text-white`;
 const Subheading = tw(SubheadingBase)`text-center mb-3`;
-const Description = tw(SectionDescription)`text-center mx-auto`;
+const Description = tw(SectionDescription)`text-center text-white mx-auto`;
 const ThreeColumnContainer = styled.div`
-  ${tw`mt-10 flex flex-col items-center lg:items-stretch lg:flex-row flex-wrap lg:justify-center max-w-screen-lg mx-auto`}
+  ${tw`mt-10 flex flex-col items-center lg:items-stretch lg:flex-row flex-wrap lg:justify-center max-w-screen-lg mx-auto text-white`}
 `;
 const Column = styled.div`
   ${tw`lg:w-1/3 max-w-xs`}
@@ -35,7 +35,7 @@ const Card = styled.a`
   }
 
   .description {
-    ${tw`mt-4 text-sm font-medium text-secondary-300`}
+    ${tw`mt-4 text-sm font-medium text-white`}
   }
 
   .link {

@@ -13,15 +13,17 @@ const Container = tw.div`relative`;
 const ThreeColumnContainer = styled.div`
   ${tw`flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-lg mx-auto py-20 md:py-24`}
 `;
-const Subheading = tw(SubheadingBase)`mb-4`;
-const Heading = tw(SectionHeading)`w-full`;
-const Description = tw(SectionDescription)`w-full text-center`;
-
+const Subheading = tw.h5`font-bold text-white`
+const Heading = tw(SectionHeading)`w-full text-white`;
+const Description = tw.p`mt-4 text-sm md:text-base lg:text-lg font-medium leading-relaxed text-white max-w-xl`;
+const HighlightedText = tw.span`bg-white text-xl md:text-3xl text-green-500 px-4 inline-block`;
+// tw.h1`text-white  leading-snug max-w-3xl font-bold`;
 const VerticalSpacer = tw.div`mt-10 w-full`
 
 const Column = styled.div`
-  ${tw`md:w-1/2 lg:w-1/3 max-w-sm`}
+  ${tw`md:w-1/2 lg:w-1/3 max-w-sm bg-white`}
 `;
+
 
 const Card = styled.div`
   ${tw`flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left h-full mx-4 px-2 py-8`}
@@ -37,7 +39,7 @@ const Card = styled.div`
   }
 
   .title {
-    ${tw`mt-4 tracking-wide font-bold text-2xl leading-none`}
+    ${tw`mt-4 bg-white text-primary-500 transform -skew-x-12 inline-block tracking-wide font-bold text-2xl leading-none px-4`}
   }
 
   .description {
@@ -89,7 +91,7 @@ export default ({ cards = null, heading = "Our Offices", subheading = "Locations
   return (
     <Container>
       <ThreeColumnContainer>
-        {subheading && <Subheading>{subheading}</Subheading>}
+        {subheading && <HighlightedText>{subheading}</HighlightedText>}
         <Heading>{heading}</Heading>
         {description && <Description>{description}</Description>}
         <VerticalSpacer />

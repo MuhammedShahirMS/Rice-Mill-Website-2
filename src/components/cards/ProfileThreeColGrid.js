@@ -11,9 +11,9 @@ import { ReactComponent as GithubIcon } from "images/github-icon.svg";
 import ProfilePic from "images/default-profile-pic.svg";
 
 const HeadingContainer = tw.div``
-const Heading = tw(SectionHeading)``
+const Heading = tw(SectionHeading)`text-white`
 const Subheading = tw(SubheadingBase)`text-center mb-3`
-const Description = tw(SectionDescription)`mx-auto text-center`
+const Description = tw(SectionDescription)`mx-auto text-center text-white`
 
 const Cards = tw.div`flex flex-wrap flex-row justify-center sm:max-w-2xl lg:max-w-5xl mx-auto`
 const Card = tw.div`mt-24 w-full sm:w-1/2 lg:w-1/3 flex flex-col items-center`
@@ -24,10 +24,10 @@ const CardImage = styled.div`
 const CardContent = styled.div`
   ${tw`flex flex-col items-center mt-6`}
   .position {
-    ${tw`uppercase font-bold tracking-widest text-xs text-primary-500`}
+    ${tw`uppercase font-bold tracking-widest text-xs text-white`}
   }
   .name {
-    ${tw`mt-1 text-xl font-medium text-gray-900`}
+    ${tw`mt-1 text-xl font-medium text-green-500 px-5 bg-white`}
   9
 `
 
