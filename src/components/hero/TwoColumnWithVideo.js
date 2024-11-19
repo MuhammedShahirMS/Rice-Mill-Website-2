@@ -18,9 +18,12 @@ import Carousel from "components/carousel/index.js";
 import Header from '../headers/light'
 
 const Container = tw.div`relative`;
+
 const TwoColumn = tw.div`flex flex-col lg:flex-row md:items-center max-w-screen-xl mx-auto py-20 md:py-24`;
-const LeftColumn = tw.div`relative lg:w-6/12 lg:pr-12 flex-shrink-0 text-center lg:text-left`;
-const RightColumn = tw.div`relative mt-12 lg:mt-0 flex flex-col justify-center`;
+// const LeftColumn = tw.div`relative lg:w-6/12 lg:pr-12 flex-shrink-0 text-center lg:text-left order-2 lg:order-1`;
+const LeftColumn = tw.div`relative lg:w-6/12 lg:pr-12 flex-shrink-0 text-center lg:text-left order-2 lg:order-1 mt-8 lg:mt-0`;
+
+const RightColumn = tw.div`relative mt-12 lg:mt-0 flex flex-col justify-center order-1 lg:order-2`;
 
 const Heading = tw.h1`text-white text-3xl md:text-5xl leading-snug max-w-3xl font-bold`;
 

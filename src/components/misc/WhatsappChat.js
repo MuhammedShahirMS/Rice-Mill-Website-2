@@ -16,7 +16,7 @@ console.log('THE Unan ere', chatUrl);
 const handleWhatsappChat = () => window.open(chatUrl, '_blank')
 
 
-const WhatsAppInfo = tw.div`ml-2 md:block hidden`;
+const WhatsAppInfo = tw.div`ml-2 md:block hidden text-black`;
 
 const WhatsAppChatSection = () => {
   return (
