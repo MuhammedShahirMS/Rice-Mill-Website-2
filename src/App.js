@@ -28,7 +28,7 @@ import HomePage from "pages/HomePage.js";
 import Products from "pages/Products";
 
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import ContactUs from "pages/ContactUs";
 import AboutUs from "pages/AboutUs";
 
@@ -50,6 +50,7 @@ export default function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/contact_us" element={<ContactUs />} />
           <Route path="/about_us" element={<AboutUs />} />
+          <Route path="/lander" element={<Navigate to="/" replace />} />
         </Routes>
       </Router>
       <WhatsAppChatButton/>
