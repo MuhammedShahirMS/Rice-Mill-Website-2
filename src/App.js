@@ -51,6 +51,7 @@ export default function App() {
           <Route path="/contact_us" element={<ContactUs />} />
           <Route path="/about_us" element={<AboutUs />} />
           <Route path="/lander" element={<Navigate to="/" replace />} />
+          <Route path="/*" element={<HomePage />} />
         </Routes>
       </Router>
       <WhatsAppChatButton/>
